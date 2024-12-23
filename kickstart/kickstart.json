@@ -68,7 +68,7 @@
           "password": "#{adminPassword}"
         },
         "registration": {
-          "applicationId": "#{FUSIONAUTH_APPLICATION_ID}",
+          "applicationId": "#{applicationId}",
           "roles": [
             "admin"
           ]
