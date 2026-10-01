@@ -25,7 +25,6 @@
     {
       "method": "POST",
       "url": "/api/key/generate/#{asymmetricKeyId}",
-      "tenantId": "#{defaultTenantId}",
       "body": {
         "key": {
           "algorithm": "RS256",
@@ -36,7 +35,7 @@
     },
     {
       "method": "PATCH",
-      "url": "api/system-configuration",
+      "url": "/api/system-configuration",
       "body": {
         "systemConfiguration": {
           "corsConfiguration": {
@@ -152,6 +151,7 @@
             "accountTwoFactorDisable": "@{templates/accountTwoFactorDisable.ftl}",
             "accountTwoFactorEnable": "@{templates/accountTwoFactorEnable.ftl}",
             "accountTwoFactorIndex": "@{templates/accountTwoFactorIndex.ftl}",
+            "accountTwoFactorEdit": "@{templates/accountTwoFactorEdit.ftl}",
             "accountWebAuthnAdd": "@{templates/accountWebAuthnAdd.ftl}",
             "accountWebAuthnDelete": "@{templates/accountWebAuthnDelete.ftl}",
             "accountWebAuthnIndex": "@{templates/accountWebAuthnIndex.ftl}",
